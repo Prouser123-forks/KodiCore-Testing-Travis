@@ -1,0 +1,5 @@
+main: me.prouser123.kodicore.Main
+name: KodiCore
+version: ${project.version}
+description: KodiCore - Plugin Core & Utils
+author: Prouser123
