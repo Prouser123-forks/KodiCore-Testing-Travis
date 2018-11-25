@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>me.prouser123</groupId>
   <artifactId>KodiCore</artifactId>
-  <version>0.1.2-SNAPSHOT</version>
+  <version>0.1.4-SNAPSHOT</version>
   <build>
     <sourceDirectory>src/java</sourceDirectory>
     <resources>
@@ -68,11 +68,11 @@
   <distributionManagement>
     <repository>
       <id>packagecloud-Prouser123</id>
-      <url>packagecloud+https://packagecloud.io/Prouser123/minecraft</url>
+      <url>packagecloud+https://packagecloud.io/Prouser123/kodi-core</url>
     </repository>
     <snapshotRepository>
       <id>packagecloud-Prouser123</id>
-      <url>packagecloud+https://packagecloud.io/Prouser123/minecraft</url>
+      <url>packagecloud+https://packagecloud.io/Prouser123/kodi-core</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
