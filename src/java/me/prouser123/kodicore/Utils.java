@@ -3,8 +3,10 @@ package me.prouser123.kodicore;
 import java.util.Collection;
 
 import org.bukkit.World;
+import org.bukkit.configuration.file.FileConfiguration;
 
 import me.prouser123.kodicore.Main;
+import me.prouser123.kodicore.send.Console;
 
 public class Utils {
 	
@@ -32,6 +34,22 @@ public class Utils {
 		// Broadcast to server (message)
 		public static int global (String message) {
 			return Main.inst().getServer().broadcastMessage(message);
+		}
+	}
+	
+	
+	public static class getConfig {
+		
+		// Get String
+		public static void getString(String destination, String path, FileConfiguration theGetConfig) {
+			destination = theGetConfig.getString(path);
+			Console.info("[getConfig] Loading: " + path);
+		}
+		
+		// Get Int
+		public static void getInt(int destination, String path, FileConfiguration theGetConfig) {
+			destination = theGetConfig.getInt(path);
+			Console.info("[getConfig] Loading: " + path);
 		}
 	}
 	
