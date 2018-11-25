@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>me.prouser123</groupId>
   <artifactId>KodiCore</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1-SNAPSHOT-RC1</version>
   <build>
     <sourceDirectory>src/java</sourceDirectory>
     <resources>

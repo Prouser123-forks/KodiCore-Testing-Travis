@@ -1,5 +1,6 @@
 package me.prouser123.kodicore.send;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 
 import me.prouser123.kodicore.Main;
@@ -14,19 +15,19 @@ public class Console {
 		Console.prefix = "[" + plugin.getName() + " " + Main.version + "] ";
 	}
 	
-	// Log Info Message
+	// Log Info Message - [KodiCore (version)] message
 	public static void info(String message) {
-		Main.inst().getLogger().info(prefix + message);
+		Bukkit.getLogger().info(prefix + message);
 	}
 	
 	// Log Warning Message
 	public static void warning(String message) {
-		Main.inst().getLogger().warning(prefix + message);
+		Bukkit.getLogger().warning(prefix + message);
 	}
 	
 	// Log Severe Message
 	public static void severe(String message) {
-		Main.inst().getLogger().severe(prefix + message);
+		Bukkit.getLogger().severe(prefix + message);
 	}
 	
 }
