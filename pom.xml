@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>me.prouser123</groupId>
   <artifactId>KodiCore</artifactId>
-  <version>0.1-SNAPSHOT-RC1</version>
+  <version>0.1.2-SNAPSHOT</version>
   <build>
     <sourceDirectory>src/java</sourceDirectory>
     <resources>
@@ -21,6 +21,13 @@
         </configuration>
       </plugin>
     </plugins>
+    <extensions>
+      <extension>
+        <groupId>io.packagecloud.maven.wagon</groupId>
+        <artifactId>maven-packagecloud-wagon</artifactId>
+        <version>0.0.6</version>
+      </extension>
+    </extensions>
   </build>
   <name>KodiCore</name>
   <url>https://github.com/Prouser123/KodiCore/</url>
@@ -58,4 +65,14 @@
     <systemPath>${project.basedir}/lib/craftbukkit-1.12.jar</systemPath>
 </dependency>-->
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>packagecloud-Prouser123</id>
+      <url>packagecloud+https://packagecloud.io/Prouser123/minecraft</url>
+    </repository>
+    <snapshotRepository>
+      <id>packagecloud-Prouser123</id>
+      <url>packagecloud+https://packagecloud.io/Prouser123/minecraft</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
