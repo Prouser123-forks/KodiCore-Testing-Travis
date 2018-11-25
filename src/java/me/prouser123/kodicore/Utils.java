@@ -38,18 +38,20 @@ public class Utils {
 	}
 	
 	
-	public static class getConfig {
+	public static class Config {
 		
 		// Get String
-		public static void getString(String destination, String path, FileConfiguration theGetConfig) {
-			destination = theGetConfig.getString(path);
-			Console.info("[getConfig] Loading: " + path);
+		public static void getString(String destination, String path, FileConfiguration getConfig, String pluginName) {
+			destination = getConfig.getString(path);
+			// Log to console
+			Console.info("[" + pluginName + "] [getConfig] Loading: " + path);
 		}
 		
 		// Get Int
-		public static void getInt(int destination, String path, FileConfiguration theGetConfig) {
-			destination = theGetConfig.getInt(path);
-			Console.info("[getConfig] Loading: " + path);
+		public static void getInt(int destination, String path, FileConfiguration getConfig, String pluginName) {
+			destination = getConfig.getInt(path);
+			// Log to console
+			Console.info("[" + pluginName + "] [getConfig] Loading: " + path);
 		}
 	}
 	
