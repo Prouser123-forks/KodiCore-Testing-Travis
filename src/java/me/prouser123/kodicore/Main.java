@@ -5,6 +5,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import me.prouser123.kodicore.send.Console;
 
 public class Main extends JavaPlugin {
+	
+    public static String version;
 
 	// Instancing
 	private static Main instance;
@@ -12,8 +14,6 @@ public class Main extends JavaPlugin {
     public static Main inst() {
     	  return instance;
     }
-    
-    public static String version;
     
     // On Enable
 	@Override
