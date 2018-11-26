@@ -15,17 +15,28 @@ public class Console {
 		Console.prefix = "[" + plugin.getName() + " " + Main.version + "] ";
 	}
 	
-	// Log Info Message - [KodiCore (version)] message
+	/**
+	 * Log an INFO Message to the Console
+	 * Displays as: [KodiCore (version)] message
+	 * 
+	 * @param message message
+	 */
 	public static void info(String message) {
 		Bukkit.getLogger().info(prefix + message);
 	}
 	
-	// Log Warning Message
+	/**
+	 * Log a WARNING Message to the Console
+	 * @param message message
+	 */
 	public static void warning(String message) {
 		Bukkit.getLogger().warning(prefix + message);
 	}
-	
-	// Log Severe Message
+
+	/**
+	 * Log a SEVERE Message to the Console
+	 * @param message message
+	 */
 	public static void severe(String message) {
 		Bukkit.getLogger().severe(prefix + message);
 	}

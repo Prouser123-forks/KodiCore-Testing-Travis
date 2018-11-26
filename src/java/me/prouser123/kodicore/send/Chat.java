@@ -26,6 +26,7 @@ public class Chat {
      * Send a private message
      *
      * @param message Message to send
+     * @param players Array of players to send message to
      */
     public static void toPlayers(String message, Set<Player> players) {
         for (Player player : players) {
@@ -38,7 +39,7 @@ public class Chat {
      * Send a private message
      *
      * @param message    Message to send
-     * @param permission Permission
+     * @param permission Permission node
      */
     public static void toPermission(String message, String permission) {
         Utils.Broadcast.toPermission(message, permission);
